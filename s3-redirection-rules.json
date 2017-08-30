@@ -1,0 +1,14 @@
+<RoutingRules>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals/>
+      <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
+    </Condition>
+    <Redirect>
+      <Protocol>http</Protocol>
+      <HostName>imgresize-env.cn-north-1.eb.amazonaws.com.cn</HostName>
+      <ReplaceKeyPrefixWith>resize.php?src=</ReplaceKeyPrefixWith>
+      <HttpRedirectCode>302</HttpRedirectCode>
+    </Redirect>
+  </RoutingRule>
+</RoutingRules>
