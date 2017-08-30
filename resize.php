@@ -42,7 +42,7 @@ if($imagick){
     'Bucket' => $bucketName,
     'Key' => $src,
     'StorageClass' => 'REDUCED_REDUNDANCY',
-    'Tagging' => 'thumbnail=true'
+    'Tagging' => 'thumbnail=yes'
   ]);
   die();
 }
